@@ -1,3 +1,14 @@
-import Login as login
+from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import *
 
-login.Login.login(self=0)
+import Home 
+import sys
+
+def main():
+    app = QApplication(sys.argv)
+    win = Home.Home()
+    win.setWindowTitle("TodoList")
+    win.show()
+    sys.exit(app.exec_())
+
+main()
